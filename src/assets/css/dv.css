@@ -1,0 +1,54 @@
+.dv_box{
+    border: solid 1px #e6ba19;
+    margin:  20px auto;
+    background: #ffffff;
+}
+.dv_description{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: black;
+    border: solid 1px #e6ba19;
+    line-height: 25px;
+    text-indent:2em;
+    text-align: left;
+}
+.toolBox{
+    fill: #e6ba19
+}
+.toolBoxText{
+    text-anchor: middle;
+    fill: #ffffff
+}
+.basic_bar{
+    transition: display 2s;
+}
+.dv_p{
+    font-size: 15px;
+    padding-left: 15px;
+    text-indent: 2em;
+    text-align: left;
+}
+.dv_pre{
+   font-size: 16px;
+    font-weight: bolder;
+}
+.node text{
+    text-anchor: start;
+    font-size: 10px;
+    transform: translate(10px,3px);
+}
+.node circle{
+    fill: #ffffff;
+    stroke: rgba(51,204,210,0.99);
+}
+.link{
+    fill: none;
+    stroke: #33ccd2;
+
+}
+.chord path {
+    fill-opacity: 0.67;
+    stroke: #000;
+    stroke-width: 0.5px;
+}

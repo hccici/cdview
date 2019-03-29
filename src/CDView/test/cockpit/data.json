@@ -1,0 +1,169 @@
+{
+  "data1":[
+    {
+      "name": "小米",
+      "value": 60.8
+    }, {
+      "name": "华为",
+      "value": 30.8
+    }, {
+      "name": "三星",
+      "value": 40.8
+    }, {
+      "name": "苹果",
+      "value": 70.8
+    }, {
+      "name": "其它",
+      "value": 20.8
+    }],
+  "data2":[
+    {
+      "sex": "男",
+      "phone": [{"name": "小米", "sales": 500}, {"name": "华为", "sales": 343}, {"name": "三星", "sales": 234}, {
+        "name": "苹果",
+        "sales": 560
+      }, {"name": "其它", "sales": 560}]
+    },
+    {
+      "sex": "女",
+      "phone": [{"name": "小米", "sales": 400}, {"name": "华为", "sales": 222}, {"name": "三星", "sales": 600}, {
+        "name": "苹果",
+        "sales": 322
+      }, {"name": "其它", "sales": 560}]
+    }
+  ],
+  "data3":[
+    {
+      "name": "小米",
+      "attribute": [{"name": "18~25岁", "value": 90}, {"name": "25~32岁", "value": 80}, {
+        "name": "32~40岁",
+        "value": 60
+      }, {"name": "40~48岁", "value": 30}, {"name": "48~55岁", "value": 12}]
+    },
+    {
+      "name": "华为",
+      "attribute": [{"name": "18~25岁", "value": 67}, {"name": "25~32岁", "value": 50}, {
+        "name": "32~40岁",
+        "value": 93
+      }, {"name": "40~48岁", "value": 50}, {"name": "48~55岁", "value": 76}]
+    },
+    {
+      "name": "苹果",
+      "attribute": [{"name": "18~25岁", "value": 76}, {"name": "25~32岁", "value": 56}, {
+        "name": "32~40岁",
+        "value": 32
+      }, {"name": "40~48岁", "value": 12}, {"name": "48~55岁", "value": 19}]
+    }, {
+      "name": "三星",
+      "attribute": [{"name": "18~25岁", "value": 45}, {"name": "25~32岁", "value": 24}, {
+        "name": "32~40岁",
+        "value": 46
+      }, {"name": "40~48岁", "value": 56}, {"name": "48~55岁", "value": 70}]
+    }, {
+      "name": "其它",
+      "attribute": [{"name": "18~25岁", "value": 60}, {"name": "25~32岁", "value": 32}, {
+        "name": "32~40岁",
+        "value": 13
+      }, {"name": "40~48岁", "value": 23}, {"name": "48~55岁", "value": 15}]
+    }
+  ],
+  "data4":[
+    {
+      "date": "2018/11/11 00:10:00",
+      "saleInfo": [
+        {"name": "小米", "number": 100},
+        {"name": "华为", "number": 71},
+        {"name": "三星", "number": 12},
+        {"name": "苹果", "number": 49},
+        {"name": "其它", "number": 60}
+      ]
+    },
+    {
+      "date": "2018/11/11 00:20:00",
+      "saleInfo": [
+        {"name": "小米", "number": 70},
+        {"name": "华为", "number": 80},
+        {"name": "三星", "number": 32},
+        {"name": "苹果", "number": 60},
+        {"name": "其它", "number": 30}
+      ]
+    },
+    {
+      "date": "2018/11/11 00:30:00",
+      "saleInfo": [
+        {"name": "小米", "number": 50},
+        {"name": "华为", "number": 46},
+        {"name": "三星", "number": 5},
+        {"name": "苹果", "number": 50},
+        {"name": "其它", "number": 30}
+      ]
+    },
+    {
+      "date": "2018/11/11 00:40:00",
+      "saleInfo": [
+        {"name": "小米", "number": 60},
+        {"name": "华为", "number": 30},
+        {"name": "三星", "number": 53},
+        {"name": "苹果", "number": 23},
+        {"name": "其它", "number": 43}
+      ]
+    },
+    {
+      "date": "2018/11/11 00:50:00",
+      "saleInfo": [
+        {"name": "小米", "number": 50},
+        {"name": "华为", "number": 23},
+        {"name": "三星", "number": 1},
+        {"name": "苹果", "number": 30},
+        {"name": "其它", "number": 12}
+      ]
+    },
+    {
+      "date": "2018/11/11 01:00:00",
+      "saleInfo": [
+        {"name": "小米", "number": 30},
+        {"name": "华为", "number": 34},
+        {"name": "三星", "number": 4},
+        {"name": "苹果", "number": 23},
+        {"name": "其它", "number": 4}
+      ]
+    }
+  ],
+  "data5": [
+    {"name":"小米","info": [
+      {"name": "北京", "value": 56},
+      {"name": "上海", "value": 36},
+      {"name": "浙江", "value": 50},
+      {"name": "广西", "value": 40},
+      {"name": "福建", "value": 66}
+    ]},
+    {"name":"华为","info": [
+      {"name": "北京", "value": 50},
+      {"name": "上海", "value": 80},
+      {"name": "浙江", "value": 23},
+      {"name": "广西", "value": 65},
+      {"name": "福建", "value": 88}
+    ]},
+    {"name":"三星","info": [
+      {"name": "北京", "value": 32},
+      {"name": "上海", "value": 45},
+      {"name": "浙江", "value": 87},
+      {"name": "广西", "value": 56},
+      {"name": "福建", "value": 90}
+    ]},
+    {"name":"苹果","info": [
+      {"name": "北京", "value": 54},
+      {"name": "上海", "value": 45},
+      {"name": "浙江", "value": 56},
+      {"name": "广西", "value": 90},
+      {"name": "福建", "value": 65}
+    ]},
+    {"name":"其它","info": [
+      {"name": "北京", "value": 100},
+      {"name": "上海", "value": 80},
+      {"name": "浙江", "value": 61},
+      {"name": "广西", "value": 40},
+      {"name": "福建", "value": 66}
+    ]}
+  ]
+}

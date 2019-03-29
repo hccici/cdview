@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>南丁格尔玫瑰图</title>
+</head>
+<body>
+<div id="hc" style="width: 500px;height: 500px;border:1px solid #000000;"></div>
+<button id="btn">改变数据</button>
+</body>
+<script src="../../../dist/CDView.js"></script>
+<script src="../../js/changeData.js"></script>
+<script src="../../js/jquery-3.2.1.min.js"></script>
+<script>
+    function drawNRByC() {
+        let data = [
+            {
+                name: '小米',
+                value: 60.8
+            }, {
+                name: '华为',
+                value: 30.8
+            }, {
+                name: '联想',
+                value: 30.4
+            }, {
+                name: '三星',
+                value: 40.8
+            }, {
+                name: '苹果',
+                value: 70.8
+            }, {
+                name: '其他',
+                value: 20.8
+            }];
+        let config = {
+            VC: {
+                color: 'name',
+                size: 'value'
+            },
+            pie: {
+                innerRadius: 0,
+                outerRadius: 130,
+            },
+            tooltip: {
+                content: function (d) {
+                    //console.log(d) 不知道d是什么结构时看一下
+                    return (d.data.name + '销量为：' + d.value + '万台')
+                }
+            },
+            legend: {
+                content: function (d) {
+                    return `${d.name}`
+                }
+            },
+            text: {
+                content: function (d) {
+                    return d.data.name
+                },
+                fontSize: function (d) {
+                    return d.data.value / 3
+                }
+            },
+            animation: true
+        };
+        let update = CDView.nightingale_rose.selectById('hc').draw(data, config);
+        $('#btn').click(function () {
+            data.forEach(function (item) {
+                item.value=generateRandomData(0,100)
+            });
+            update.reDraw(data);
+
+
+        })
+    }
+
+    drawNRByC()
+</script>
+</html>

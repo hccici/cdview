@@ -1,0 +1,194 @@
+<template>
+    <div>
+        <el-row>
+            <el-col :span="16">
+                <div id="packArea_c" class="dv_box" :style="{width: '500px', height: '500px'}"></div>
+            </el-col>
+            <el-col :span="8">
+                <div class="dv_description">
+                    <p>
+                        基本的打包图
+                    </p>
+                    <p class="dv_p">
+                        表示：
+                        中国的城市结构，最小的圆表示每个城市，它的父节点表示省份，省份的上一级就是中国
+                    </p>
+                </div>
+            </el-col>
+        </el-row>
+        <el-row>
+            <div class="dv_description">
+                <pre class="dv_pre">
+
+                    图形对象：packArea
+                    配置选项：
+                     VC: {
+                        hierarchy :['province','cities'], (层级关系属性，从大到小)
+                     },
+                     text: true                           (是否显示文本)
+                    使用说明：
+                    这个图所需要的的数据类型是一个标准的json对象，并且具有层及关系。
+                </pre>
+            </div>
+        </el-row>
+    </div>
+</template>
+
+<script>
+
+    export default {
+        name: "packArea",
+        methods: {
+            drawPackByCDView() {
+                let data = {
+                    "name":"中国",
+                    "province":
+                        [
+                            {
+                                "name":"浙江" ,
+                                "cities":
+                                    [
+                                        {"name":"杭州" },
+                                        {"name":"宁波" },
+                                        {"name":"温州" },
+                                        {"name":"绍兴" }
+                                    ]
+                            },
+                            {
+                                "name":"广西" ,
+                                "cities":
+                                    [
+                                        {"name":"桂林"},
+                                        {"name":"南宁"},
+                                        {"name":"柳州"},
+                                        {"name":"防城港"}
+                                    ]
+                            },
+                            {
+                                "name":"黑龙江",
+                                "cities":
+                                    [
+                                        {"name":"哈尔滨"},
+                                        {"name":"齐齐哈尔"},
+                                        {"name":"牡丹江"},
+                                        {"name":"大庆"}
+                                    ]
+                            },
+                            {
+                                "name":"新疆" ,
+                                "cities":
+                                    [
+                                        {"name":"乌鲁木齐"},
+                                        {"name":"克拉玛依"},
+                                        {"name":"吐鲁番"},
+                                        {"name":"哈密"}
+                                    ]
+                            },
+                            {
+                                "name":"河北" ,
+                                "cities":
+                                    [
+                                        {"name":"石家庄"},
+                                        {"name":"唐山"},
+                                        {"name":"邯郸"},
+                                        {"name":"秦皇岛"}
+                                    ]
+                            },
+                            {
+                                "name":"西藏" ,
+                                "cities":
+                                    [
+                                        {"name":"拉萨"},
+                                        {"name":"昌都"},
+                                        {"name":"林芝"}
+                                    ]
+                            },
+                            {
+                                "name":"江苏" ,
+                                "cities":
+                                    [
+                                        {"name":"南京"},
+                                        {"name":"无锡"},
+                                        {"name":"徐州"},
+                                        {"name":"常州"},
+                                        {"name":"连云港"},
+                                        {"name":"淮安"}
+                                    ]
+                            },
+                            {
+                                "name":"江苏" ,
+                                "cities":
+                                    [
+                                        {"name":"南京"},
+                                        {"name":"无锡"},
+                                        {"name":"徐州"},
+                                        {"name":"常州"},
+                                        {"name":"连云港"},
+                                        {"name":"淮安"}
+                                    ]
+                            },
+                            {
+                                "name":"湖南" ,
+                                "cities":
+                                    [
+                                        {"name":"长沙"},
+                                        {"name":"株洲"},
+                                        {"name":"湘潭"},
+                                        {"name":"衡阳"},
+                                        {"name":"邵阳"},
+                                        {"name":"岳阳"}
+                                    ]
+                            },
+                            {
+                                "name":"海南" ,
+                                "cities":
+                                    [
+                                        {"name":"海口"},
+                                        {"name":"三亚"},
+                                        {"name":"三沙"}
+                                    ]
+                            },
+                            {
+                                "name":"陕西" ,
+                                "cities":
+                                    [
+                                        {"name":"西安"},
+                                        {"name":"咸阳"},
+                                        {"name":"汉中"},
+                                        {"name":"安康"},
+                                        {"name":"榆林"},
+                                        {"name":"延安"}
+                                    ]
+                            },
+                            {
+                                "name":"甘肃" ,
+                                "cities":
+                                    [
+                                        {"name":"兰州"},
+                                        {"name":"酒泉"},
+                                        {"name":"金昌"},
+                                        {"name":"天水"},
+                                        {"name":"嘉峪关"},
+                                        {"name":"武威"}
+                                    ]
+                            }
+                        ]
+                };
+                let config={
+                    VC: {
+                        hierarchy :['province','cities'],
+                    },
+                    text: true
+                };
+                this.$cdview.packArea.selectById('packArea_c').draw(data,config);
+            }
+        },
+        mounted(){
+            this.drawPackByCDView()
+        }
+    }
+</script>
+
+<style scoped>
+
+</style>

@@ -1,0 +1,74 @@
+
+.cd_curve {
+    fill: none;
+    stroke: #4c62ff;
+    stroke-width: 2px;
+}
+
+.cd_xy_axis {
+    fill: none;
+    stroke: rgba(7, 6, 5, 0.99);
+}
+
+.cd_xy_axis text {
+    font: 12px sans-serif;
+    fill: rgba(7, 6, 5, 0.99)
+}
+
+.dots {
+    fill: rgba(255, 255, 255, 0.99);
+    stroke: rgba(7, 6, 5, 0.99);
+}
+
+.grid-line {
+    stroke: rgba(210, 210, 210, 0.99);
+}
+
+.bubble {
+    fill-opacity: .3;
+}
+
+.lineArea {
+    fill: #4c62ff;
+    fill-opacity: .3;
+}
+
+.rectArea text {
+    font-size: 8px;
+    text-anchor: start;
+    transform: translate(0px, 10px);
+}
+
+.tooltip {
+    font-family: simsun;
+    font-size: 14px;
+    width: 120px;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.circleCoordinate_c {
+    fill: none;
+    stroke: #e3e3e3;
+}
+/*极坐标系*/
+.polarAxis_r circle {
+    fill: none;
+    stroke: steelblue;
+    stroke-dasharray: 4;
+}
+.polarAxis_a line {
+    fill: none;
+    stroke: steelblue;
+    stroke-dasharray: 4;
+}
+/*多行文本*/
+.multiText {
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
