@@ -8,7 +8,7 @@ module.exports = {
         open:
             true, //配置自动启动浏览器
         // 配置多个代理
-        publicPath: '/',
+        publicPath: 'cdview',
         proxy: {
             '/api': {
                 target: 'http://localhost:3000',
